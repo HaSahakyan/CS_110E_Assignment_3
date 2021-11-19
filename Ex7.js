@@ -18,7 +18,7 @@ function binNumAdd(a, b){
         for(let i = 1; i <= count; i++){
         bResult.unshift(0);
         }
-       }else if(b.length > a.length){
+       }else if(bResult.length > aResult.length){
         let count = bResult.length - aResult.length;
         for(let i = 1; i <= count; i++){
         aResult.unshift(0);
