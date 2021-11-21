@@ -18,7 +18,7 @@ function binNumAdd(a, b){
         for(let i = 1; i <= count; i++){
         bResult.unshift(0);
         }
-       }else if(b.length > a.length){
+       }else if(bResult.length > aResult.length){
         let count = bResult.length - aResult.length;
         for(let i = 1; i <= count; i++){
         aResult.unshift(0);
@@ -28,7 +28,7 @@ function binNumAdd(a, b){
        let carry = 0;
        let sum = [];
        for(let i = aResult.length-1; i >= 0; i--){
-           if(aResult[i] + bResult[i] === 2){   //both numbers are 1
+           if(carry + aResult[i] + bResult[i] === 3){   //both numbers are 1
                sum[i] = carry;
                carry = 1;
            } else if(carry + aResult[i] + bResult[i] === 2){
